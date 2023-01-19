@@ -200,7 +200,7 @@ img.pj4:hover{
 }
 .b-con{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 .pj-b{
     padding: 10px 20px;
