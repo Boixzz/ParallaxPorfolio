@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(0deg, rgba(207,224,255,1) 0%, rgba(130,127,209,1) 100%);
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+header .logo{
+    color: rgba(130,127,209,1);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: rgba(130,127,209,1);
+    border-radius: 20px;
+}
+header ul li a:hover,header ul li a.active{
+    box-shadow: inset 2px 2px 4px rgb(38, 37, 61);
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, rgba(130,127,209,1), transparent);
+    z-index: 1000;
+}
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+section img#sun{
+    mix-blend-mode: screen;
+}
+#text{
+    position: absolute;
+    color: rgba(130,127,209,1);
+    white-space: nowrap;
+    font-size: 7.5vw;
+    z-index: 9;
+}
+#text2{
+    position: absolute;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #fff;
+    color: rgb(90, 87, 163);
+    white-space: nowrap;
+    font-size: 1.5em;
+    z-index: 8;
+    transform: translateY(100px);
+}
+#text2:hover{
+    box-shadow: inset 2px 2px 4px rgb(38, 37, 61);
+    transform: translateY(100.5px);
+}
+.sec{
+    position: relative;
+    padding: 100px;
+    background: linear-gradient(0deg, rgba(207,224,255,1) 0%, rgba(130,127,209,1) 100%);
+    z-index: 1000;
+}
+.sec h2{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: rgb(20, 6, 53);
+}
+.sec p{
+    font-size: 1.2em;
+    color: rgb(20, 6, 53);
+}
+.thi{
+    position: relative;
+    padding: 100px;
+    background: linear-gradient(0deg, rgba(207,224,255,1) 0%, rgba(130,127,209,1) 100%);
+    z-index: 1000;
+}
+.thi h2{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: rgb(20, 6, 53);
+}
+.thi p{
+    font-size: 1.2em;
+    color: rgb(20, 6, 53);
+}
+.fou{
+    position: relative;
+    padding: 100px;
+    background: linear-gradient(0deg, rgba(207,224,255,1) 0%, rgba(130,127,209,1) 100%);
+    z-index: 1000;
+}
+.fou h2{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: rgb(20, 6, 53);
+}
+.fou p{
+    font-size: 1.2em;
+    color: rgb(20, 6, 53);
+}
+.p-con{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.w-p{
+    padding: 10px 20px;
+    border-radius: 40px;
+    background-color: #fff;
+}
+.w-p:hover{
+    box-shadow: inset 2px 2px 4px rgb(38, 37, 61);
+    transform: translateY(0.5px);
+}
+.thi img{
+    position: relative;
+    width: 500px;
+}
+.img-con{
+    display: flex;
+    justify-content: space-around;
+}
+.pj1{
+    transform: rotate(-5deg);
+    padding: 20px 0px;
+}
+.pj2{
+    transform: rotate(5deg);
+    padding: 20px 0px;
+}
+img.pj3{
+    width: 300px;
+    height: 450px;
+    transform: rotate(-10deg);
+}
+img.pj4{
+    width: 300px;
+    height: 450px;
+    transform: rotate(10deg);
+}
+.pj1:hover{
+    transform: rotate(-10deg);
+}
+.pj2:hover{
+    transform: rotate(10deg);
+}
+img.pj3:hover{
+    transform: rotate(-15deg);
+}
+img.pj4:hover{
+    transform: rotate(15deg);
+}
+.b-con{
+    display: flex;
+    justify-content: center;
+}
+.pj-b{
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    background: rgba(130,127,209,1);
+    color: #fff;
+    font-size: medium;
+}
+.pj-b:hover{
+    box-shadow: inset 2px 2px 4px rgb(38, 37, 61);
+    transform: translateY(0.5px);
+}
+@media  screen and (max-width: 1200px) {
+    body{
+        display: none;
+    }
+}

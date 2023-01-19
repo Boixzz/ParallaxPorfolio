@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Parallax Portfolio</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Hello</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#sec">About</a></li>
+            <li><a href="#thi">Work</a></li>
+            <li><a href="#fou">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="img/sky1.svg" id="sky1">
+        <h2 id="text">I am Soe Say Linn</h2>
+        <h2 id="text2">Web Developer</h2>
+        <img src="img/rock2.svg" id="rock2">
+        <img src="img/bird4.svg" id="bird4">
+        <img src="img/bird5.svg" id="bird5">
+    </section>
+    <div class="sec" id="sec">
+        <h2>About</h2>
+        <p class="year"><b>2018 - - -</b></p>
+        <p class="edu">Graduated from No(3) Basic Education High School (North Dagon).</p>
+        <br>
+        <p class="year"><b>2019 - - -</b></p>
+        <p class="edu">Finished Zoology first year at Dagon University.</p>
+        <br>
+        <p class="year"><b>2022 - - -</b></p>
+        <p class="edu">Certified Web Development and Design Course at Advanced Institute of Mechanics & Technology (AIMT).</p>
+        <br>
+        <p class="year"><b>Present - - -</b></p>
+        <p class="edu">Taking Professional Diploma in Information and Technology at MIBA University.</p>
+        <br>
+    </div>
+    <div class="thi" id="thi">
+        <h2>Work</h2>
+        <div class="p-con">
+            <p class="w-p">4 years experience</p>
+            <br>
+            <p class="w-p">7+ languages</p>
+            <br>
+            <p class="w-p">6 complete projects</p>
+            <br>
+        </div>
+        <p><b>#1 project</b></p>
+        <p><b>Online learnig website</b></p>
+        <br>
+        <ul class="pj-l">
+            <li><p class="pj-t">PHP project.</p></li>
+            <li><p class="pj-t">Using Bootstrap for style.</p></li>
+            <li><p class="pj-t">Using Mysql data table for login and course data.</p></li>
+        </ul>
+        <br>
+        <div class="img-con">
+            <img class="pj1" src="img/pj1.PNG">
+            <img class="pj2" src="img/pj2.PNG">
+        </div>
+        <div class="b-con">
+            <a href="https://github.com/Boixzz/Learning-it-up.git">
+                <button class="pj-b">View Source Code on Git Hub</button>
+            </a>
+        </div>
+        <p><b>#2 project</b></p>
+        <p><b>Javascript snake game</b></p>
+        <br>
+        <ul class="pj-l">
+            <li><p class="pj-t">Javascript project.</p></li>
+            <li><p class="pj-t">Using check-box and radio-button.</p></li>
+            <li><p class="pj-t">Responsive.</p></li>
+        </ul>
+        <br>
+        <div class="img-con">
+            <img class="pj3" src="img/pj3.PNG">
+            <img class="pj4" src="img/pj4.PNG">
+        </div>
+        <div class="b-con">
+            <a href="https://github.com/Boixzz/CheckSnake">
+                <button class="pj-b">View Source Code on Git Hub</button>
+            </a>
+        </div>
+    </div>
+    <div class="fou" id="fou">
+        <h2>Contect</h2>
+        <br>
+        <p>I start learning progamming at the age of 16. First of all, I am very enjoy when I am coding. 
+            And I am patience. So it is useful in debuging. I am a first learner too.
+        </p>
+        <br>
+        <p><b>So, let's work together.</b></p>
+        <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=soesay2002@gmail.com"><p>@Email</p></a>
+        <a href="https://github.com/Boixzz"><p>@Git Hub</p></a>
+        <a href="https://stackoverflow.com/users/20873832/soe-say"><p>@Stack Overflow</p></a>
+    </div>
+    <script>
+        let sky = document.getElementById('sky1');
+        let text = document.getElementById('text');
+        let text2 = document.getElementById('text2');
+        let rock = document.getElementById('rock2');
+        let bird1 = document.getElementById('bird4');
+        let bird2 = document.getElementById('bird5');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            sky.style.top = value * 0 + 'px';
+            bird1.style.left = value * 0.15 + 'px';
+            bird2.style.left = value * 0.5 + 'px';
+            rock.style.top = value * 0.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        });
+    </script>
+</body>
+</html>
